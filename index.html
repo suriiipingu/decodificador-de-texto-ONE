@@ -8,52 +8,56 @@
         <title>Decodificador de texto</title>
     </head>
     <body>
-        //corpo 1 e corpo 2
-        <div class="">
-            <div>
-                //logo alura
-                <img src="imgs/logo_alura.svg" alt="Logo da Alura" id="logo">
-            </div>
-
-            //parágrafo para escrita
-            <input type="text" id="cx_texto" name="texto" class="textbox">
-
-            //botões e informação
-            <div id="cx_inf">
+        <!-- corpo 1 e corpo 2 -->
+        <div id="container">
+            <div id="box1">
                 <div>
-                    //imagem do vetor de informação
-                    <img src="imgs/vetor_inf.svg" alt="Uma imagem que indica que está escrito uma informação relevante" id="img_vetor">
+                    <!-- logo alura -->
+                    <img src="imgs/logo_alura.svg" alt="Logo da Alura" id="logo">
                 </div>
-                //informação
-                <p>Apenas letras minúsculas e sem acento.</p>
+                <div id="box-filho">
+                    <!-- parágrafo para escrita -->
+                    <textarea name="texto" class="textbox" placeholder="Digite seu texto" rows="4" cols="50"></textarea>
+
+                    <!-- botões e informação -->
+                    <div id="cx_inf">
+                        <div class="img">
+                            <!-- imagem do vetor de informação -->
+                            <img src="imgs/vetor_inf.svg" alt="Uma imagem que indica que está escrito uma informação relevante" id="img_vetor">
+                        </div>
+                        <!-- informação -->
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
+                    <div id="botoes">
+                        <button class="botao" id="btn_cript" onclick="">Criptografar</button>
+                        <button class="botao" id="btn_descript" onclick="">Descriptografar</button>
+                    </div>
+                </div>
             </div>
-            <button onclick="">Criptografar</button>
-            <button onclick="">Descriptografar</button>
-
-        </div>
-        <div class="">
-            //div normal
-            <div>
-                <div> 
-                    //imagem
-                    <img src="imgs/img_pessoa_lupa.svg" alt="Imagem de uma pessoa segurando uma lupa, olhando para um diamante" id="img">
-                </div>
-
-                //informação
+            <div id="box2">
+                <!-- div normal -->
                 <div>
-                    <p>Nenhuma mensagem encontrada</p>
-                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <div> 
+                        <!-- imagem -->
+                        <img src="imgs/img_pessoa_lupa.svg" alt="Imagem de uma pessoa segurando uma lupa, olhando para um diamante" id="img">
+                    </div>
+
+                    <!-- informação -->
+                    <div>
+                        <p>Nenhuma mensagem encontrada</p>
+                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
                 </div>
+
+                <!-- div escondida -->
+                <div>
+                    <!-- paragrafo de mensagem (escondido) -->
+                    <p></p>
+
+                    <!-- botao para copiar (escondido) -->
+                    <button onclick="">Copiar</button>
+                </div>         
             </div>
-
-            //div escondida
-            <div>
-                //paragrafo de mensagem (escondido)
-                <p></p>
-
-                //botao para copiar (escondido)
-                <button onclick="">Copiar</button>
-            </div>         
-        </div>
+    </div>
     </body>
 </html>

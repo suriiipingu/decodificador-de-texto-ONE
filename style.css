@@ -8,9 +8,18 @@
     src: url('fonts/Inter-4.0/web/Inter-Bold.woff2') format('truetype');
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #F3F5FC;
     font-family: 'Inter', sans-serif;
+}
+
+button{
+    cursor: pointer;
 }
 
 #container{
@@ -33,10 +42,11 @@ body {
 textarea{
     font-family: 'Inter';
     width: 100%;
-    max-height: 70vh;
+    height: 100%;
+    color: rgba(10, 56, 113, 1);
     background-color: transparent;
     border: none;
-    font-size: 20px;
+    font-size: 32px;
     resize:none;
     overflow: auto;
 }
@@ -84,9 +94,14 @@ textarea:focus{
 
 #btn_cript{
     background: rgba(10, 56, 113, 1);
+    border: none;
     color: white;
     width: 48%;
     margin-right: 3%;
+}
+
+#btn_cript:hover{
+    background: rgb(17, 74, 143);
 }
 
 #btn_descript{
@@ -94,6 +109,10 @@ textarea:focus{
     background: transparent;
     color: rgba(10, 56, 113, 1);
     width: 48%;
+}
+
+#btn_descript:hover{
+    background: rgb(236, 237, 240);
 }
 
 /* corpo 2 */
@@ -106,6 +125,8 @@ textarea:focus{
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     width: 25%;
     height:100vh;
+    margin-bottom: 20px;
+    margin-right: 20px;
     border-radius: 32px;
     
 }
@@ -116,6 +137,21 @@ textarea:focus{
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+#box-filho-escondido{
+    width: 80%;
+    height: 90%;
+}
+
+#p-crip-descrip{
+    width: 100%; 
+    max-height: 90%;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    font-size: 24px;
+    color:rgba(73, 80, 87, 1);
+
 }
 
 .responsivo {
@@ -150,13 +186,18 @@ textarea:focus{
 }
 
 #btn_cop{
-   border: 1px solid rgba(10, 56, 113, 1);
+    border: 1px solid rgba(10, 56, 113, 1);
    border-radius: 24px;
    width: 100%;
    height: 65px;
+   margin-top: 5%;
    font-size: 16px;
    background-color: transparent;
    color: rgba(10, 56, 113, 1);
+}
+
+#btn_cop:hover{
+    background: rgb(236, 237, 240);
 }
 
 #box-filho-escondido{
